@@ -5,114 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Labb 2 - Grupp 38</title>
     <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
   </head>
   <body>
-    <style>
-      body {
-        background-color: rgb(31, 37, 54);
-      }
-
-      .box {
-        grid: flex;
-        width: auto;
-        height: auto;
-        background-color: rgb(226, 224, 221);
-        border-radius: 5px;
-        padding: 50px;
-      }
-
-      h1 {
-        font-family: "Arial";
-        font-weight: normal;
-        font-size: 40px;
-        color: white;
-        text-align: center;
-        margin-bottom: 40px;
-        margin-top: 40px;
-      }
-
-      .grid-box {
-        display: flex;
-        width: auto;
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        padding: 50px;
-        gap: 15px;
-      }
-
-      input {
-        padding: 20px;
-      }
-
-      .checkbox {
-        border-radius: 5px;
-      }
-
-      .a {
-        grid-row: 1;
-        font-size: 20px;
-        margin: 30px;
-      }
-
-      .b {
-        grid-row: 2;
-        font-size: 20px;
-        margin: 30px;
-      }
-
-      .c {
-        grid-row: 3;
-        font-size: 20px;
-        margin: 30px;
-      }
-
-      #color.textfield {
-        grid-row: 1;
-        grid-column: 2;
-        border-radius: 5px;
-        margin: 30px;
-      }
-
-      #content.textfield {
-        grid-row: 2;
-        grid-column: 2;
-        border-radius: 5px;
-        margin: 30px;
-      }
-
-      #divStyle.checkbox {
-        grid-row: 4;
-        grid-column: 2;
-        border-radius: 5px;
-        align-self: left;
-        margin: 30px;
-      }
-
-      div {
-        font-family: Arial;
-        color: rgb(67, 65, 65);
-      }
-
-      .button {
-        grid-row: 5;
-        grid-column: 1;
-        border-radius: 5px;
-        font-size: 20px;
-      }
-    </style>
     <h1>Labb 2 - Grupp 38</h1>
-    <div class="box grid-box">
-      <div class="a">Färg</div>
-      <div class="b">Innehåll</div>
-      <div class="c">Stil på box</div>
+    <div class="container">
+      <div class="box grid-box">
+        <div class="a">Färg</div>
+        <div class="b">Innehåll</div>
+        <div class="c">Stil på box</div>
 
-      <input type="text" name="color" id="color" class="textfield" />
-      <input type="text" name="content" id="content" class="textfield" />
-      <input type="checkbox" name="divStyle" id="divSTyle" class="checkbox" />
+        <input type="text" name="color" id="color" class="textfield" />
+        <input type="text" name="content" id="content" class="textfield" />
+        <input type="checkbox" name="divStyle" id="divSTyle" class="checkbox" />
 
-      <button>Ta bort</button>
+        <button class="button">Ta bort</button>
+        <div name="div" class="div"></div>
+      </div>
     </div>
-    <div name="div"></div>
   </body>
 </html>
