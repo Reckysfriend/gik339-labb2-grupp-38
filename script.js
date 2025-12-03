@@ -4,7 +4,7 @@
 const checkbox = document.getElementById("divSTyle")
 const textfield = document.getElementsByClassName("textfield")
 const button = document.querySelector("button")
-let divElement = document.getElementsByName("div")
+const divElement = document.getElementsByName("div")
 
 //-------------------- Uppgift 5 Skapa en fördefinierad funktion ---------------
 function eventReader(e){
